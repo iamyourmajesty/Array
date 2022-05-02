@@ -52,3 +52,23 @@ int main()
     return 0;
 }
 //time complexity o(n) and space complexity o(1)
+//leetcode proble 905
+//move all odd number to one side and all even numbers to other side and order is not maintained
+/*vector<int> sortArrayByParity(vector<int>& nums) {
+        //applying two pointer approach
+        int l=0,r=nums.size()-1;
+        while(l<r)
+        {
+            if((nums[l]&1)==0)
+                l++;
+            if((nums[r]&1)==1)
+                r--;
+            if((l<r) && ((nums[l]&1)==1) && ((nums[r]&1)==0))
+            {
+                swap(nums[l],nums[r]);
+                l++;
+            }
+        }
+        return nums;
+    }
+    */
