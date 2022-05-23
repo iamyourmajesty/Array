@@ -14,6 +14,7 @@ void print_rowwise(int n,int m , int arr[][4])
 }
 void print_colwise(int n,int m,int arr[][4])
 {
+    // col wise print kr rhy hai to hr col k liyay row o to n tak chalega
     for(int j=0;j<m;j++)
     {
         for(int i=0;i<n;i++)
