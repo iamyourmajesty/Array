@@ -6,14 +6,15 @@ int main()
     int arr[][3]={1,2,3,4,5,6,7,8,9};
     int n=3,m=3;
     int sum=0,maxi=0;
-    for(int i=0;i<n;i++)
+    for(int j=0;j<m;j++)
     {
-        sum=0;
-        for(int j=0;j<m;j++)
+        sum =0;
+        for(int i=0;i<n;i++)
         {
-            sum += arr[j][i];
+            sum += arr[i][j];
         }
-        maxi=(maxi,sum);
+        maxi = max(maxi,sum);
+
     }
     cout<<maxi;
     return 0;
